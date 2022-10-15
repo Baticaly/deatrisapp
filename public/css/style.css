@@ -24,7 +24,7 @@ h1 {
 
 .logo {
     animation: 1s ease-out 0s 1 load;
-    width: 3rem;
+    width: 4rem;
 }
 .siteheader {
     padding-top: 3vh;
