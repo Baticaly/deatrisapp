@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
@@ -20,13 +20,20 @@
                     <img src="/img/logo.png" class="logo">
                 </div>
                 <div class="cardTop"></div>
-
+                
                 <%- include('./partials/messages') %>
 
-                <form action="/app-admin/login" method="post" class="loginForm">
-                    <input type="email" id="email" name="email" placeholder="Email" class="inputField" required><br>
-                    <input type="password" id="password" name="password" placeholder="Password" class="inputField" required><br>
-                    <input type="submit" value="Login" class="loginButton">
+                <form action="/beta" method="post" class="loginForm">
+                    <input type="text" id="name" name="name" placeholder="Username" value="<%= typeof name != 'undefined' ? name : '' %>" required><br>
+                    <input type="email" id="email" name="email" placeholder="Email" value="<%= typeof email != 'undefined' ? email : '' %>" required><br>
+                    <select class="selectpicker" name="os" required>
+                        <optgroup label="Select Prefered OS">
+                            <option name="" value="0">Select Prefered OS</option>
+                            <option name="os" value="ios">IOS</option>
+                            <option name="os" value="android">Android</option>
+                        </optgroup>
+                    </select>
+                    <input type="submit" value="Register" class="loginButton">
                 </form>
         
                 <div class="cardBottom"></div>

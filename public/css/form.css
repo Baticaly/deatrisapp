@@ -1,0 +1,199 @@
+:root {
+    --backgroundPrimary: #110F0F;
+    --backgroundSecondary: #DFF6E6;
+    --gradientElement1: #3D3F9A;
+    --gradientElement2: #A02C86;
+
+    --darkPrimary: #212121;
+	--darkSecondary: #BBBBBB;
+	--cardBackground: #444444;
+    --white: #F4F3EE;
+
+    --fontPrimary: #EDEEEF;
+    --fontSecondary: #5A5D60;
+    --fontHeader: #2A2433;
+    --fontAccent: #6610F5;
+}
+
+body {
+    margin: 0;
+	background-color: var(--backgroundSecondary);
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: var(--fontPrimary);
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+@keyframes load {
+    0% {
+      opacity: 0;
+      transform: translateX(-200%);
+    }
+    100% {
+      opacity: 100;
+      transform: translateX(0);
+    }
+  }
+
+.main {
+    padding-right: 3rem;
+    padding-left: 5rem;
+    height: 100vh;
+    background-color: var(--backgroundPrimary);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.coinheader {
+    flex-basis: 20%;
+}
+
+.deatriscoin {
+    flex-basis: 50%;
+}
+
+.card {
+	background-color: var(--cardBackground);
+	opacity: 90%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	vertical-align: center;
+	align-items: center;
+
+	padding: .3em .3em;
+	margin-bottom: .7em;
+	border-radius: 1em;
+	color: var(--white);
+	min-width: 300px;
+}
+
+.notch {
+	background-color: var(--backgroundPrimary);
+	width: 8em;
+	height: .8em;
+	border-radius: 1em;
+	margin-top: .5em;
+    margin-bottom: 2em;
+}
+
+.logo {
+    width: 5em;
+}
+
+.loginForm {
+    margin-top: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+input[type=text] {
+	margin-top: 1em;
+	padding-left: 1em;
+	width: 17.5em;
+	height: 2.75em;
+	background-color: var(--darkPrimary);
+	color: var(--white);
+	border-radius: .8em;
+	border: none;
+}
+
+input[type=email] {
+	padding-left: 1em;
+	width: 17.5em;
+	height: 2.75em;
+	background-color: var(--darkPrimary);
+	color: var(--white);
+	border-radius: .8em;
+	border: none;
+}
+
+input[type=password] {
+	margin-top: -.7em;
+	padding-left: 1em;
+	width: 17.5em;
+	height: 2.75em;
+	background-color: var(--darkPrimary);
+	color: var(--white);
+	border-radius: .8em;
+	border: none;
+}
+
+.loginButton {
+	background-color: var(--darkSecondary);
+	width: 8em;
+	height: 2.5em;
+	margin-bottom: 1em;
+	border: none;
+	border-radius: 2em;
+	cursor: pointer;
+}
+
+.loginButton:hover {
+	background-color: var(--white);
+}
+
+.cardTop {
+	height: 3em;
+}
+
+.cardBottom {
+	height: 5em;
+}
+
+.href{
+	color: var(--blue);
+}
+
+.selectpicker {
+    margin-bottom: 1em;
+	padding-left: 1em;
+    padding-right: 1em;
+	width: 10em;
+	height: 2.75em;
+	background-color: var(--darkPrimary);
+	color: var(--white);
+	border-radius: .8em;
+	border: none;
+}
+
+.alert-success {
+	font-family: 'Inter', sans-serif;
+    color: var(--fontPrimary);
+    font-size: .9rem;
+    font-weight: 500;
+	background-color: #8d37fc;
+	width: 15em;
+	height: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	vertical-align: center;
+	align-items: center;
+	border-radius: .5em;
+}
+
+.alert-warning {
+	font-family: 'Inter', sans-serif;
+    color: var(--fontPrimary);
+    font-size: .9rem;
+    font-weight: 500;
+	background-color: #f05471;
+	width: 15em;
+	height: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	vertical-align: center;
+	align-items: center;
+	border-radius: .5em;
+}

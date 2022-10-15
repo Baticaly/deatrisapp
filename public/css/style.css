@@ -217,6 +217,7 @@ h1 {
 .cityheaderaccent {
     color: var(--fontAccent);
     font-weight: 700;
+    margin-bottom: 5vh;
 }
 
 .citysubheader {
@@ -234,7 +235,6 @@ h1 {
 }
 
 .joinbeta {
-    margin-top: 3vh;
     background-color: var(--fontAccent);
     color: var(--fontPrimary);
     font-size: 1.2rem;

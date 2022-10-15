@@ -8,7 +8,7 @@ module.exports = function(passport) {
     passport.use(
         new LocalStrategy({ usernameField: 'email' }, (email, password, done) => {
             
-            User.findOne({ email: email })
+            Admin.findOne({ email: email })
                 .then(user => {
                     if(!user) {
                         return done(null, false, { message: 'No user with the email' })
@@ -33,7 +33,7 @@ module.exports = function(passport) {
     })
     
     passport.deserializeUser((id, done) => {
-        User.findById(id, (err, user) => {
+        Admin.findById(id, (err, user) => {
             done(err, user)
         })
     })
