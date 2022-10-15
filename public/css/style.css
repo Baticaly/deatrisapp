@@ -251,3 +251,193 @@ h1 {
 	background-color: var(--fontHeader);
 }
 
+@media (max-width:800px) {
+
+    .logo {
+        margin-left: 5vw;
+        animation: 1s ease-out 0s 1 load;
+        width: 10vw;
+    }
+    .siteheader {
+        width: 100vw;
+        padding: 0;
+        padding-top: 1.5vh;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .joinbetaheader {
+        margin-right: 5vw;
+        animation: 1s ease-out 0s 1 load;
+        background-color: var(--fontPrimary);
+        color: var(--fontHeader);
+        font-size: 2vw;
+        font-weight: 700;
+        width: 20vw;
+        height: 4vh;
+        border: none;
+        border-radius: 2em;
+        cursor: pointer;
+        transition: width 0.4s ease-in-out;
+    }
+    .joinbetaheader:hover {
+        background-color: var(--fontAccent);
+        color: var(--fontPrimary);
+    }
+
+    .main {
+        padding: 0;
+        margin: 0;
+        margin-top: -.5vh;
+
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--backgroundPrimary);
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .coinheader {
+        margin: 0;
+        width: 80vw;
+        animation: 1s ease-out 0s 1 load;
+    }
+    
+    .deatriscoin {
+        margin-top: -25em;
+        width: 100vw;
+        animation: 1s ease-out 0s 1 load;
+    }
+    
+    .subheader {
+        font-family: 'Inter', sans-serif;
+        color: var(--fontSecondary);
+        font-size: 3vw;
+        font-weight: 800;
+        font-style: italic;
+        text-align: center;
+    }
+    
+    .header {
+        font-family: 'Inter', sans-serif;
+        color: var(--fontPrimary);
+        font-size: 5vw;
+        font-weight: 800;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .flow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .flowheader {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        color: var(--fontHeader);
+        font-size: 5vw;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .flowaccent {
+        color: var(--fontAccent);
+        font-weight: 700;
+    }
+
+    .people {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+
+    .peoplevector {
+        max-width: 50vw;
+        margin-bottom: 10vh;
+    }
+    
+    .peopleheader {
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        color: var(--fontHeader);
+        font-size: 5vw;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .peopleheaderaccent {
+        color: var(--fontAccent);
+        font-weight: 700;
+    }
+
+    .city {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .citycontainer {
+        padding: 0;
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+    .cityheader {
+        font-family: 'Inter', sans-serif;
+        color: var(--fontHeader);
+        font-size: 5vw;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .cityheaderaccent {
+        color: var(--fontAccent);
+        font-weight: 700;
+    }
+    
+    .citysubheader {
+        color: var(--fontSecondary);
+        font-size: 3vw;
+        font-weight: 800;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .cityvector {
+        margin-top: 5vh;
+        width: 13rem;
+    }
+
+    .joinbeta {
+        background-color: var(--fontAccent);
+        color: var(--fontPrimary);
+        font-size: 2vw;
+        font-style: italic;
+        width: 25vw;
+        height: 5vh;
+        border: none;
+        border-radius: 3em;
+        cursor: pointer;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .buildingsvector {
+        margin-top: 1vh;
+        margin-bottom: -7vh;
+        width: 100vw;
+    }
+
+}

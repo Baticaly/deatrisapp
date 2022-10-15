@@ -197,3 +197,20 @@ input[type=password] {
 	align-items: center;
 	border-radius: .5em;
 }
+
+@media (max-width:800px) {
+	.deatriscoin {
+		display: none;
+	}
+
+	.main {
+		padding: 0;
+		display: flex;
+		width: 100vw;
+		height: 100vh;
+
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+	}
+}
