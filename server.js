@@ -12,7 +12,7 @@ const app = express()
 
 require('./config/passport')(passport)
 
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser : true })
+mongoose.connect('mongodb://localhost:27017/deatrisapp', { useNewUrlParser : true })
     .then(() => console.log(`Mongo connected`))
     .catch(err => console.log(err))
 
