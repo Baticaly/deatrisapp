@@ -1,0 +1,182 @@
+:root {
+    --backgroundPrimary: #000000;
+    --backgroundSecondary: #DFF6E6;
+    --gradientElement1: #3D3F9A;
+    --gradientElement2: #A02C86;
+
+    --fontPrimary: #FDFDFD;
+    --fontSecondary: #252726;
+    --fontAccent: #6610F5;
+}
+
+body {
+    margin: 0;
+	background-color: var(--backgroundSecondary);
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: var(--fontPrimary);
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.main {
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    height: 100vh;
+    background-color: var(--backgroundPrimary);
+    background-image: url('../img/shadow.png');
+    background-position: center;
+    background-size: 50rem;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header {
+    font-family: 'Inter', sans-serif;
+    color: var(--fontPrimary);
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: -20vw;
+}
+
+.flow {
+    height: 100vh;
+    background-image: url('../img/ny.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+}
+
+.flowcontainer {
+    margin-top: 15vh;
+}
+
+.flowheader {
+    margin: 0;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    margin-left: 15vw;
+
+    font-family: 'Inter', sans-serif;
+    color: var(--fontSecondary);
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.flowaccent {
+    color: var(--fontAccent);
+    font-weight: 500;
+}
+
+.people {
+    height: 100vh;
+
+    display: flex;
+	justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.peoplevector {
+    width: 25rem;
+}
+
+.peopleheader {
+    margin: 0;
+    padding-left: 10vw;
+    padding-right: 5vw;
+
+    font-family: 'Inter', sans-serif;
+    color: var(--fontSecondary);
+    font-size: 3.2rem;
+    font-weight: 200;
+    text-align: right;
+}
+
+.peopleheaderaccent {
+    color: var(--fontAccent);
+    font-weight: 500;
+}
+
+.city {
+    height: 50vh;
+
+    display: flex;
+	justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+}
+
+.cityvector {
+    width: 25rem;
+}
+
+.cityheader {
+    margin: 0;
+    padding-left: 3vw;
+    padding-right: 5vw;
+
+    font-family: 'Inter', sans-serif;
+    color: var(--fontSecondary);
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.cityheaderaccent {
+    color: var(--fontAccent);
+    font-weight: 500;
+}
+
+.buildingsvector {
+    margin-top: 5vh;
+    margin-bottom: -.5vh;
+    width: 100vw;
+}
+
+.display {
+    height: 100vh;
+    background: rgb(61,63,154);
+    background: linear-gradient(54deg, rgba(61,63,154,1) 0%, rgba(160,44,134,1) 100%);
+
+    display: flex;
+	justify-content: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+.coinvector {
+    width: 25rem;
+}
+
+.coinheader {
+    margin: 0;
+    margin-bottom: 3rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    font-family: 'Inter', sans-serif;
+    color: var(--fontPrimary);
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: right;
+}
+
+.coinheaderaccent {
+    margin-bottom: 0;
+    color: var(--fontPrimary);
+    font-weight: 500;
+}
