@@ -158,7 +158,7 @@ input[type=password] {
     margin-bottom: 1em;
 	padding-left: 1em;
     padding-right: 1em;
-	width: 10em;
+	width: 12.5em;
 	height: 2.75em;
 	background-color: var(--darkPrimary);
 	color: var(--white);
@@ -167,11 +167,11 @@ input[type=password] {
 }
 
 .alert-success {
+	background-color: #8d37fc;
 	font-family: 'Inter', sans-serif;
     color: var(--fontPrimary);
     font-size: .9rem;
     font-weight: 500;
-	background-color: #8d37fc;
 	width: 15em;
 	height: 2em;
 	display: flex;
@@ -183,11 +183,11 @@ input[type=password] {
 }
 
 .alert-warning {
+	background-color: #f05471;
 	font-family: 'Inter', sans-serif;
     color: var(--fontPrimary);
     font-size: .9rem;
     font-weight: 500;
-	background-color: #f05471;
 	width: 15em;
 	height: 2em;
 	display: flex;
