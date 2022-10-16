@@ -13,6 +13,15 @@ services:
     networks:
       - app-network
 
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+
   webserver:
     image: nginx:mainline-alpine
     container_name: webserver
