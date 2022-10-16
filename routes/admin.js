@@ -12,7 +12,7 @@ router.get('/login', checkNotAuthenticated, (req, res) => {
 router.get('/register', checkNotAuthenticated, (req, res) => {
     res.render('register')
 })
-
+/*
 router.post('/register', checkNotAuthenticated, (req, res) => {
     const { name, email, password, password2 } = req.body
     let errors = []
@@ -55,7 +55,7 @@ router.post('/register', checkNotAuthenticated, (req, res) => {
 
     }
 })
-
+*/
 router.post('/login', checkNotAuthenticated, (req, res, next) => {
     passport.authenticate('local', {
         successRedirect: '/dashboard',
