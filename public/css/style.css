@@ -239,7 +239,7 @@ h1 {
     background-color: var(--fontAccent);
     color: var(--fontPrimary);
     font-size: 1.2rem;
-    font-style: italic;
+    font-style: normal;
     width: 12rem;
     height: 4rem;
     border: none;
