@@ -8,6 +8,7 @@
 	--darkSecondary: #BBBBBB;
 	--cardBackground: #444444;
     --white: #F4F3EE;
+	--pink : #E3CCFF;
 
     --fontPrimary: #EDEEEF;
     --fontSecondary: #5A5D60;
@@ -17,7 +18,7 @@
 
 body {
     margin: 0;
-	background-color: var(--backgroundSecondary);
+	background-color: var(--backgroundPrimary);
 }
 
 h1 {
@@ -68,6 +69,7 @@ h1 {
 	justify-content: center;
 	vertical-align: center;
 	align-items: center;
+	align-content: space-around;
 
 	padding: .3em .3em;
 	margin-bottom: .7em;
@@ -86,18 +88,17 @@ h1 {
 }
 
 .logo {
-    width: 5em;
+    width: 17em;
 }
 
 .loginForm {
     margin-top: 1em;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 }
 
 input[type=text] {
-	margin-top: 1em;
 	padding-left: 1em;
 	width: 17.5em;
 	height: 2.75em;
@@ -108,17 +109,6 @@ input[type=text] {
 }
 
 input[type=email] {
-	padding-left: 1em;
-	width: 17.5em;
-	height: 2.75em;
-	background-color: var(--darkPrimary);
-	color: var(--white);
-	border-radius: .8em;
-	border: none;
-}
-
-input[type=password] {
-	margin-top: -.7em;
 	padding-left: 1em;
 	width: 17.5em;
 	height: 2.75em;
@@ -143,11 +133,11 @@ input[type=password] {
 }
 
 .cardTop {
-	height: 3em;
+	height: 1em;
 }
 
 .cardBottom {
-	height: 5em;
+	height: 3em;
 }
 
 .href{
@@ -157,8 +147,7 @@ input[type=password] {
 .selectpicker {
     margin-bottom: 1em;
 	padding-left: 1em;
-    padding-right: 1em;
-	width: 12.5em;
+	width: 15.5em;
 	height: 2.75em;
 	background-color: var(--darkPrimary);
 	color: var(--white);
@@ -166,7 +155,34 @@ input[type=password] {
 	border: none;
 }
 
+.social {
+	margin-top: 3vh;
+	width: 15em;
+	border-radius: .8em;
+	border: none;
+	text-align: center;
+}
+
+.socialheader {
+	color: var(--pink);
+	font-size: 3vw;
+	font-weight: 700;
+}
+
+a {
+	font-family: 'Inter', sans-serif;
+	text-decoration: none;
+	font-size: .8em;
+	font-weight: 300;
+	color: var(--fontPrimary);
+}
+
+a:hover {
+	color: var(--pink);
+}
+
 .alert-success {
+	padding: .5em;
 	background-color: #8d37fc;
 	font-family: 'Inter', sans-serif;
     color: var(--fontPrimary);
@@ -183,10 +199,11 @@ input[type=password] {
 }
 
 .alert-warning {
+	padding: .5em;
 	background-color: #f05471;
 	font-family: 'Inter', sans-serif;
     color: var(--fontPrimary);
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 500;
 	width: 15em;
 	height: 2em;

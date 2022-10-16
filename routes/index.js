@@ -13,24 +13,24 @@ router.get('/beta', (req, res) => {
 })
 
 router.post('/beta', (req, res) => {
-    const { name, email, os } = req.body
+    const { name, email, os, city } = req.body
     let errors = []
     if(!name || !email || !os) {
-        errors.push({ message: 'Please fill in all the fields'})
+        errors.push({ message: 'Lütfen tüm alanları doldurun'})
     }
 
     if(os === '0') {
-        errors.push({ message: 'Please choose preferred OS'})
+        errors.push({ message: 'Lütfen telefon işletim sisteminizi seçin'})
     }
 
     if(errors.length > 0) {
-        res.render('form', { errors, name, email, os })
+        res.render('form', { errors, name, email, os, city })
     } else {
         
-        const newForm = new Form({ name:name, email:email,  os:os })
+        const newForm = new Form({ name:name, email:email,  os:os,  city:city })
         newForm.save()
             .then(form => {
-                req.flash('success_msg', 'Successfully registered!')
+                req.flash('success_msg', 'Başvurunuz için teşekkürler!')
                 res.redirect('/beta')
             })
             .catch(err => console.log(err))

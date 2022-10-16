@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/img/logo.ico">
-    <title>DeatrisPanel</title>
+    <title>Deatris</title>
 </head>
 <body>
     <div class="main">
@@ -18,24 +18,30 @@
             <div class="card">
                 <div class="notch"></div>
                 <div class="logo">
-                    <img src="/img/logo.png" class="logo">
+                    <img src="/img/beta-banner.png" class="logo">
                 </div>
                 <div class="cardTop"></div>
                 
                 <%- include('./partials/messages') %>
 
                 <form action="/beta" method="post" class="loginForm">
-                    <input type="text" id="name" name="name" placeholder="Username" value="<%= typeof name != 'undefined' ? name : '' %>" required><br>
+                    <input type="text" id="name" name="name" placeholder="İsim soyisim" value="<%= typeof name != 'undefined' ? name : '' %>" required><br>
                     <input type="email" id="email" name="email" placeholder="Email" value="<%= typeof email != 'undefined' ? email : '' %>" required><br>
+                    <input type="text" id="city" name="city" placeholder="Yaşadığın Şehir" value="<%= typeof city != 'undefined' ? city : '' %>"><br>
                     <select class="selectpicker" name="os" required>
                         <optgroup label="Select Prefered OS">
-                            <option name="" value="0">Select Prefered OS</option>
+                            <option name="" value="0">Telefonunun işletim sistemi</option>
                             <option name="os" value="ios">IOS</option>
                             <option name="os" value="android">Android</option>
                         </optgroup>
                     </select>
-                    <input type="submit" value="Register" class="loginButton">
+                    <input type="submit" value="Gönder" class="loginButton">
                 </form>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/deatrisapp/" target="_blank">Bizi Instagram'dan takip etmeyi unutma!</a>
+                    <a href="https://www.instagram.com/deatrisapp/" target="_blank" class="socialheader">@deatrisapp</a>
+                </div>
         
                 <div class="cardBottom"></div>
                 

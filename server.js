@@ -1,3 +1,5 @@
+if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
+
 const indexRoute = require('./routes/index')
 const adminRoute = require('./routes/admin')
 
