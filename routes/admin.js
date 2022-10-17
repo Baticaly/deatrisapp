@@ -3,7 +3,28 @@ const router = express.Router()
 const bcrypt = require('bcryptjs')
 const Admin = require('../models/Admin')
 const { checkNotAuthenticated } = require('../config/auth')
+const { ensureAuthenticated } = require('../config/auth')
 const passport = require('passport')
+
+const Form = require('../models/Form')
+
+router.get('/', ensureAuthenticated, async (req, res) => {
+
+    list = [];
+    await Form.find()
+        .then(res => {
+            res.forEach(function(element) {
+                list.push(element)
+            })
+        })
+        .catch(err => console.log(err))
+
+    res.render('dashboard', {
+        list,
+        listlength: list.length,
+        user: req.user
+    })
+})
 
 router.get('/login', checkNotAuthenticated, (req, res) => {
     res.render('login')
@@ -60,7 +81,7 @@ router.post('/register', checkNotAuthenticated, (req, res) => {
 
 router.post('/login', checkNotAuthenticated, (req, res, next) => {
     passport.authenticate('local', {
-        successRedirect: '/dashboard',
+        successRedirect: '/app-admin',
         failureRedirect: '/app-admin/login',
         failureFlash: true
     })(req, res, next)

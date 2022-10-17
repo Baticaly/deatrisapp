@@ -18,25 +18,13 @@
         </div>
         <div class="grid">
             <div class="countercontainer">
-                <h1 class="counter">18</h1>
+                <h1 class="counter"><%= listlength %></h1>
                 <h1 class="so-far">applicants so far</h1>
             </div>
             <div class="users">
 
-                <div class="element1">
-                    <h2 class="name">Batuhan Ergun</h2>
-                    <h2 class="email">batu@batuhanergun.com</h2>
-                    <h2 class="city">Samsun</h2>
-                    <h2 class="os">IOS</h2>
-                </div>
-
-                <div class="element2">
-                    <h2 class="name">Batuhan Ergun</h2>
-                    <h2 class="email">batu@batuhanergun.com</h2>
-                    <h2 class="city">Samsun</h2>
-                    <h2 class="os">Android</h2>
-                </div>
-
+                <%- include('./partials/elements') %>
+                
             </div>
             <div class="timeline">
                 <p class="timelineheader">No data yet</p>

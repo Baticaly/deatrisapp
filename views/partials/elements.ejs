@@ -1,0 +1,10 @@
+<% if(typeof list != 'undefined') { %>
+    <% list.forEach(function(user) { %>
+        <div class="element1">
+            <h2 class="name"><%= user.name %></h2>
+            <h2 class="email"><%= user.email %></h2>
+            <h2 class="city"><%= user.city %></h2>
+            <h2 class="os"><%= user.os %></h2>
+        </div>
+    <% }); %>
+<% } %>
